@@ -1,0 +1,57 @@
+.header {
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    &-img {
+      max-height: 100px;
+    }
+  }
+  
+  &__actions {
+    &-list {
+      padding: 1em;
+      display: flex;
+      gap: 20px;
+    }
+    &-item {
+      padding: 0.5em;      
+      &:hover {
+        transform: scale(1.1);
+        background-color: blue;
+        border-radius: 20px;
+        color: white;
+        transition: all .3s;      
+      }
+      &.active {
+        transform: scale(1.2);
+        background-color: blue;
+        border-radius: 20px;
+        color: white;
+      }
+    }
+    &-link {
+      color:inherit;
+    }
+  }
+  
+  
+  
+  &__cart {
+    padding: 0.5em;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      background-color: black;
+      border-radius: 20px;
+      color: white;
+      transition: all .3s;      
+    }
+  }
+}

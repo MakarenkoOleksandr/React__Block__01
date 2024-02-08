@@ -1,0 +1,39 @@
+.main {
+}
+
+.products {
+  &__header {
+    text-align: center;
+  }
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px
+  }
+  &__general {
+  }
+  &__bestsellers {
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 10px;
+  &__name {
+  }
+  &__img {
+    padding: 1em;
+    max-height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+  }
+}
